@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="580.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController">
+   <children>
+      <Pane layoutX="145.0" layoutY="71.0" prefHeight="59.0" prefWidth="133.0" style="-fx-background-color: #bbada0; -fx-background-radius: 8;">
+         <children>
+            <Text fx:id="scoreTitel" fill="WHITE" layoutX="43.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCORE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="61.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="26.0" layoutY="148.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #bbada0; -fx-background-radius: 8;">
+         <children>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;" />
+            <Pane layoutX="107.5" layoutY="10.0" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;" />
+            <Pane layoutX="205.0" layoutY="10.0" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;" />
+            <Pane layoutX="302.5" layoutY="10.0" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;" />
+            <Pane layoutX="10.0" layoutY="107.5" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;" />
+            <Pane layoutX="107.0" layoutY="107.5" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;" />
+            <Pane layoutX="205.0" layoutY="107.5" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;" />
+            <Pane layoutX="302.0" layoutY="107.5" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;" />
+            <Pane layoutX="10.0" layoutY="205.0" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;" />
+            <Pane layoutX="107.0" layoutY="205.0" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;" />
+            <Pane layoutX="205.0" layoutY="205.0" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;" />
+            <Pane layoutX="302.0" layoutY="205.0" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;" />
+            <Pane layoutX="10.0" layoutY="302.5" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;" />
+            <Pane layoutX="107.0" layoutY="302.5" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;" />
+            <Pane layoutX="205.0" layoutY="302.5" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;" />
+            <Pane layoutX="302.0" layoutY="302.5" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;" />
+         </children>
+      </Pane>
+      <Pane layoutX="292.0" layoutY="71.0" prefHeight="59.0" prefWidth="133.0" style="-fx-background-color: #bbada0; -fx-background-radius: 8;">
+         <children>
+            <Text fx:id="scoreTitel1" fill="WHITE" layoutX="49.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BEST">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="61.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Label fx:id="nameLabel" alignment="CENTER" layoutX="145.0" layoutY="23.0" prefHeight="38.0" prefWidth="280.0" style="-fx-background-color: #FFA500; -fx-background-radius: 8;" text="WELCOME BACK ," textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Pane layoutX="26.0" layoutY="23.0" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #9ACD32; -fx-background-radius: 3;">
+         <children>
+            <Text fill="#f5f2f2" layoutX="15.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="80.0" layoutY="23.0" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #778899; -fx-background-radius: 3;">
+         <children>
+            <Text fill="#f5f2f2" layoutX="15.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="26.0" layoutY="76.0" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #FF6347; -fx-background-radius: 3;">
+         <children>
+            <Text fill="#f5f2f2" layoutX="15.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+               <font>
+                  <Font name="SansSerif Regular" size="39.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="80.0" layoutY="76.0" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #9932CC; -fx-background-radius: 3;">
+         <children>
+            <Text fill="#f5f2f2" layoutX="15.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8">
+               <font>
+                  <Font name="SansSerif Regular" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

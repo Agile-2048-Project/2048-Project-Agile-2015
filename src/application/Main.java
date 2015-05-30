@@ -16,6 +16,8 @@ public class Main extends Application {
 	public static String MainFile = "Main.fxml";
 	public static String logInID = "login";
 	public static String LogInFile = "LogIn.fxml";
+	public static String GameID = "game";
+	public static String GameFile = "Game.fxml";
 	
 	@Override
 	public void start(Stage primaryStage) {
@@ -23,11 +25,12 @@ public class Main extends Application {
 		ScreensController mainContainer = new ScreensController();
 		mainContainer.loadScreen(Main.MainID, Main.MainFile);
 		mainContainer.loadScreen(Main.logInID, Main.LogInFile);
+		//mainContainer.loadScreen(Main.GameID, Main.GameFile);
 		
 		mainContainer.setScreen(Main.logInID);
 		Group root = new Group();
 		root.getChildren().addAll(mainContainer);
-		Scene scene = new Scene(root,500,500);
+		Scene scene = new Scene(root,454,580);
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
