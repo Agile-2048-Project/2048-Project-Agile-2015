@@ -13,6 +13,7 @@ public class MainController implements Initializable,ControlledScreen {
 	@FXML protected void handlePlayButtonAction(ActionEvent event) {
 		myController.loadScreen(Main.GameID, Main.GameFile);
 		myController.setScreen(Main.GameID);
+		
 	}
 	
 	

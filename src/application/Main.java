@@ -25,7 +25,7 @@ public class Main extends Application {
 		ScreensController mainContainer = new ScreensController();
 		mainContainer.loadScreen(Main.MainID, Main.MainFile);
 		mainContainer.loadScreen(Main.logInID, Main.LogInFile);
-		//mainContainer.loadScreen(Main.GameID, Main.GameFile);
+		
 		
 		mainContainer.setScreen(Main.logInID);
 		Group root = new Group();
