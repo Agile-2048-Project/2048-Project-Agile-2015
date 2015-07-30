@@ -19,7 +19,7 @@ public class Main extends Application {
 	public static String GameID = "game";
 	public static String GameFile = "Game.fxml";
 	
-	@Override
+	
 	public void start(Stage primaryStage) {
 		
 		ScreensController mainContainer = new ScreensController();

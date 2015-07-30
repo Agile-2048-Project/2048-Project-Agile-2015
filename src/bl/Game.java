@@ -119,7 +119,7 @@ public class Game implements Board{
 		flipDiagonally();
 	}
 	
-	private boolean compare(Tile[] lineA, Tile[] lineB) {
+	public boolean compare(Tile[] lineA, Tile[] lineB) {
 		
 		if (lineA.length != lineB.length) {
 			return false;
@@ -193,7 +193,7 @@ public class Game implements Board{
 		}
 	}
 
-	private Tile[] getLine(int index) {
+	public Tile[] getLine(int index) {
 		Tile[] line = new Tile[GRID_WIDTH];
 		for(int i=0;i<GRID_WIDTH;i++) {
 			line[i] = tileAt(i,index);
