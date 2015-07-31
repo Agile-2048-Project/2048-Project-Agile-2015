@@ -2,12 +2,14 @@ package application;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
 import application.MultiplePressedKeysEventHandler.MultiKeyEvent;
 import application.MultiplePressedKeysEventHandler.MultiKeyEventHandler;
 import bl.Data;
 import bl.Direction;
 import bl.Game;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -36,13 +38,16 @@ public class GameController implements Initializable,ControlledScreen{
 	@FXML private Label score;
 	@FXML private Label best;
 	private Game game;
+	private Data db;
 	ScreensController myController;
+	private boolean gameOver;
 	
 	@Override
 	public void setScreenParent(ScreensController screenParent) {
 		
 		myController = screenParent;
 		game = new Game();
+		gameOver = false;
 		fillBord();
 		score.setText(Integer.toString(game.getScore()));
 	}
@@ -50,10 +55,16 @@ public class GameController implements Initializable,ControlledScreen{
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		
-		Data db = Data.getInstance();
+		db = Data.getInstance();
     	nameLabel.setText("WELCOME BACK , " + db.getPlayerName().toUpperCase());
+    	best.setText(Integer.toString(db.getBestScore()));
     	
     	initKeyEventHandler();
+	}
+	
+	@FXML protected void handleMenuButtonAction(ActionEvent event) {
+		myController.setScreen(Main.MainID);
+		
 	}
 	
 	private void initKeyEventHandler() {
@@ -82,9 +93,17 @@ public class GameController implements Initializable,ControlledScreen{
 	               fillBord();
 	               score.setText(Integer.toString(game.getScore()));
 	               
-	               if(game.gameOver()) {
-	            	   System.out.println("Game Over");
+	               
+	               if(game.gameOver() && !gameOver) {
+	            	   
+	            	   gameOver = true;
+	            	   db.setLastScore(game.getScore());
+	            	   db.setScore(game.getScore());
+	            	   myController.loadScreen(Main.GameOverID, Main.GameOverFile);
+	            	   myController.setScreen(Main.GameOverID);
+	            	   
 	               } else if(game.won()) {
+	            	   
 	            	   System.out.println("Win");
 	               }
 	           }

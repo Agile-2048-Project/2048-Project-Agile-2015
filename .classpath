@@ -3,5 +3,9 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/ilq00934/Desktop/2048-Project-Agile-2015-master/2048-Project-Agile-2015-master/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ilq00934/Desktop/2048-Project-Agile-2015-master/2048-Project-Agile-2015-master/json-20140107.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ilq00934/Desktop/2048-Project-Agile-2015-master/2048-Project-Agile-2015-master/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ilq00934/Desktop/2048-Project-Agile-2015-master/2048-Project-Agile-2015-master/hamcrest-core-1.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

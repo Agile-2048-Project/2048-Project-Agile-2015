@@ -205,6 +205,7 @@ public class Game implements Board{
 		return myTiles[x+y*GRID_WIDTH];
 	}
 	
+	@SuppressWarnings("unused")
 	private boolean canMove() {
 		int num1,num2;
 		Tile temp = null;

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
@@ -8,9 +9,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="mainPane" prefHeight="580.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController">
+<AnchorPane fx:id="mainPane" prefHeight="615.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController">
    <children>
-      <Pane layoutX="26.0" layoutY="148.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #bbada0; -fx-background-radius: 8;">
+      <Pane layoutX="26.0" layoutY="195.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #bbada0; -fx-background-radius: 8;">
          <children>
             <Label fx:id="TILE1" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="87.5" prefWidth="87.5" style="-fx-background-color: #CDC0B4; -fx-background-radius: 3;">
                <font>
@@ -94,7 +95,7 @@
             </Label>
          </children>
       </Pane>
-      <Label fx:id="nameLabel" alignment="CENTER" layoutX="145.0" layoutY="23.0" prefHeight="38.0" prefWidth="280.0" style="-fx-background-color: #FFA500; -fx-background-radius: 8;" text="WELCOME BACK ," textFill="WHITE">
+      <Label fx:id="nameLabel" alignment="CENTER" layoutX="26.0" layoutY="143.0" prefHeight="38.0" prefWidth="400.0" style="-fx-background-color: #FFA500; -fx-background-radius: 8;" text="WELCOME BACK ," textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -163,5 +164,18 @@
             </Label>
          </children>
       </Pane>
+      <Button layoutX="292.0" layoutY="23.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="133.0" style="-fx-background-color: #FFA500; -fx-background-radius: 8;" text="LEADERBOARD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="145.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleMenuButtonAction" prefHeight="38.0" prefWidth="133.0" style="-fx-background-color: #FFA500; -fx-background-radius: 8;" text="MENU" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
 </AnchorPane>
